@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.infotecs.test_work.service.EntityServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 5, Errors: 1, Skipped: 0, Time elapsed: 0.418 s <<< FAILURE! - in com.infotecs.test_work.service.EntityServiceImplTest
+Update_with_default_TTL  Time elapsed: 0.064 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <com.infotecs.test_work.model.Entity@51> but was: <null>
+	at com.infotecs.test_work.service.EntityServiceImplTest.Update_with_default_TTL(EntityServiceImplTest.java:95)
+
+dump_load  Time elapsed: 0.327 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.infotecs.test_work.service.EntityServiceImplTest.dump_load(EntityServiceImplTest.java:147)
+
+read_exist_entity  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <com.infotecs.test_work.model.Entity@51> but was: <null>
+	at com.infotecs.test_work.service.EntityServiceImplTest.read_exist_entity(EntityServiceImplTest.java:39)
+
+update  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <com.infotecs.test_work.model.Entity@4f> but was: <null>
+	at com.infotecs.test_work.service.EntityServiceImplTest.update(EntityServiceImplTest.java:70)
+
+update_like_create  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+	at com.infotecs.test_work.service.EntityServiceImplTest.update_like_create(EntityServiceImplTest.java:56)
+
+Update_like_create_with_default_TTL  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+	at com.infotecs.test_work.service.EntityServiceImplTest.Update_like_create_with_default_TTL(EntityServiceImplTest.java:81)
+
