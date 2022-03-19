@@ -28,6 +28,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: ./target
+      - run:
+          name: chmod permissions
+          command: chmod +x ./mvnw
       - run: ./mvnw test
 
 workflows:
